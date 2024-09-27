@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/enierymariana/static/css/main.ab87bede.css",
+    "main.js": "/enierymariana/static/js/main.1f51513c.js",
+    "static/js/453.ee56a123.chunk.js": "/enierymariana/static/js/453.ee56a123.chunk.js",
+    "static/media/pasaporte.png": "/enierymariana/static/media/pasaporte.030b21465335746a9515.png",
+    "static/media/background.jpg": "/enierymariana/static/media/background.a3d58b2371586c377d80.jpg",
+    "static/media/fotoP.jpg": "/enierymariana/static/media/fotoP.b648cfffe6ae44733488.jpg",
+    "index.html": "/enierymariana/index.html",
+    "main.ab87bede.css.map": "/enierymariana/static/css/main.ab87bede.css.map",
+    "main.1f51513c.js.map": "/enierymariana/static/js/main.1f51513c.js.map",
+    "453.ee56a123.chunk.js.map": "/enierymariana/static/js/453.ee56a123.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ab87bede.css",
+    "static/js/main.1f51513c.js"
+  ]
+}

@@ -1,6 +1,7 @@
 
 
 @import url('https://fonts.googleapis.com/css2?family=Cousine:wght@400;700&family=Crimson+Text:wght@400;700&family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
 
 body {
   margin: 0;
@@ -116,4 +117,42 @@ h1 {
 
 p {
   font-size: 1.5rem;
+}
+
+.fondo-oscuro {
+  background-color: #1D2739;
+}
+
+.fullscreen {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.scroll-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+  /* Ocultar barra de desplazamiento */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE y Edge */
+}
+
+.scroll-container::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Edge */
+}
+
+.scroll-section {
+  scroll-snap-align: start;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carattere-text {
+  font-family: "Carattere", cursive;
+  font-weight: 400;
+  font-style: normal;
 }

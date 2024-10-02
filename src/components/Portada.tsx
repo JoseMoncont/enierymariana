@@ -1,5 +1,5 @@
 import Title from "../assets/images/pasaporte.png";
-import Background from "../assets/images/background.jpg";
+import LogoChip from "../assets/images/chip.svg";
 import { useNavigate } from "react-router-dom";
 
 const PortadaPasaporte: React.FC = () => {
@@ -10,14 +10,11 @@ const PortadaPasaporte: React.FC = () => {
   };
 
   return (
-    <div
-      className="bg-cover bg-center min-h-screen flex flex-col items-center justify-center space-y-4 p-4"
-      style={{ backgroundImage: `url(${Background})` }}
-    >
-      <img src={Title} alt="Imagen 1" className="w-80 max-w-sm object-cover" />
-
+    <div className=" h-screen w-screen flex flex-col items-center justify-center">
+      <img src={Title} alt="Imagen 1" className="w-90 max-w-sm object-cover" />
+      {/* <img src={LogoChip} alt="" className="w-10 mt-3" /> */}
       <button
-        className="text-white font-bold py-2 px-4 rounded border "
+        className="text-white font-bold py-2 px-4  border mt-12 "
         onClick={handleClick}
       >
         VER INVITACIÓN

@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/enierymariana/static/css/main.9e7f566c.css",
-    "main.js": "/enierymariana/static/js/main.6cedbcd5.js",
+    "main.css": "/enierymariana/static/css/main.1a60a726.css",
+    "main.js": "/enierymariana/static/js/main.3a0f5278.js",
     "static/js/453.c862c3b3.chunk.js": "/enierymariana/static/js/453.c862c3b3.chunk.js",
     "static/media/fotoP.jpg": "/enierymariana/static/media/fotoP.b648cfffe6ae44733488.jpg",
     "index.html": "/enierymariana/index.html",
-    "main.9e7f566c.css.map": "/enierymariana/static/css/main.9e7f566c.css.map",
-    "main.6cedbcd5.js.map": "/enierymariana/static/js/main.6cedbcd5.js.map",
+    "main.1a60a726.css.map": "/enierymariana/static/css/main.1a60a726.css.map",
+    "main.3a0f5278.js.map": "/enierymariana/static/js/main.3a0f5278.js.map",
     "453.c862c3b3.chunk.js.map": "/enierymariana/static/js/453.c862c3b3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9e7f566c.css",
-    "static/js/main.6cedbcd5.js"
+    "static/css/main.1a60a726.css",
+    "static/js/main.3a0f5278.js"
   ]
 }

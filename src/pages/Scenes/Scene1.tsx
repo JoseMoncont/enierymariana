@@ -4,19 +4,25 @@ import { useInView } from "react-intersection-observer";
 import LottieAnimation from "../../components/AnimacionLottie";
 import Mapa from "../../assets/animations/mapa.json";
 import EyM from "../../assets/images/EyM.png";
+import BackgroundAnimation from "../../assets/animations/mapamundi.json"; 
 
 const Scene1: FC = () => {
   // Hook para detectar si la escena está visible
   const { ref, inView } = useInView({
-    triggerOnce: true,
-    threshold: 0.01, // Animación se activa cuando el 30% de la escena es visible
+    triggerOnce: false,
+    threshold: 0.01, // Animación se activa cuando el 1% de la escena es visible
   });
 
   return (
     <>
+      {/* Contenedor de la animación de fondo */}
+      <div className="absolute inset-0 w-full h-full -z-1 ">
+        <LottieAnimation animationData={BackgroundAnimation} loop={true} autoplay={true} />
+      </div>
+
       <div
         ref={ref} // Referencia para la detección de la visibilidad
-        className="h-screen w-screen flex flex-col items-center justify-center"
+        className="h-screen w-screen flex flex-col items-center justify-center relative"
       >
         {/* Animación de la imagen */}
         <motion.div
@@ -24,7 +30,7 @@ const Scene1: FC = () => {
           animate={inView ? { opacity: 1, scale: 1 } : {}}
           transition={{ duration: 1 }}
         >
-          <img src={EyM} alt="EyM" className="w-52" />
+          <img src={EyM} alt="EyM" className="w-40" />
         </motion.div>
 
         {/* Animación del mapa */}

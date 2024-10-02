@@ -147,6 +147,7 @@ p {
   scroll-snap-align: start;
   height: 100vh;
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
 }

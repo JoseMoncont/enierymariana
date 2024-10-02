@@ -2,6 +2,8 @@ import { FC } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import image1 from "../../assets/images/image1.png";
+import LottieAnimation from "../../components/AnimacionLottie";
+import BackgroundAnimation from "../../assets/animations/mapamundi.json"; 
 
 const Scene2: FC = () => {
   // Detecta si el componente está en el viewport
@@ -12,6 +14,9 @@ const Scene2: FC = () => {
 
   return (
     <>
+     <div className="absolute inset-0 w-full h-full -z-1 ">
+        <LottieAnimation animationData={BackgroundAnimation} loop={true} autoplay={true} />
+      </div>
       <div
         ref={ref} // Ref necesario para detectar la visibilidad
         className="h-screen w-screen flex flex-col items-center justify-center"

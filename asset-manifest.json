@@ -1,21 +1,23 @@
 {
   "files": {
-    "main.css": "/enierymariana/static/css/main.445e5925.css",
-    "main.js": "/enierymariana/static/js/main.8a46df2c.js",
+    "main.css": "/enierymariana/static/css/main.25c3ef3c.css",
+    "main.js": "/enierymariana/static/js/main.773d02ea.js",
     "static/js/453.c862c3b3.chunk.js": "/enierymariana/static/js/453.c862c3b3.chunk.js",
     "static/media/pasaporte.png": "/enierymariana/static/media/pasaporte.ea220d072e8e9c1f0ad1.png",
+    "static/media/Pasaporte-Up.png": "/enierymariana/static/media/Pasaporte-Up.a91b6094ed53fcac4fa7.png",
+    "static/media/Pasaporte-Down.png": "/enierymariana/static/media/Pasaporte-Down.25a4a67e28840c704cf9.png",
     "static/media/image1.png": "/enierymariana/static/media/image1.75b0eae203ab44484a00.png",
     "static/media/image2.png": "/enierymariana/static/media/image2.d8d2b2f2386b8c041b71.png",
     "static/media/image3.png": "/enierymariana/static/media/image3.48d1f1629e740983fa62.png",
     "static/media/fotoP.jpg": "/enierymariana/static/media/fotoP.b648cfffe6ae44733488.jpg",
     "static/media/EyM.png": "/enierymariana/static/media/EyM.b059d93c58d55725a76f.png",
     "index.html": "/enierymariana/index.html",
-    "main.445e5925.css.map": "/enierymariana/static/css/main.445e5925.css.map",
-    "main.8a46df2c.js.map": "/enierymariana/static/js/main.8a46df2c.js.map",
+    "main.25c3ef3c.css.map": "/enierymariana/static/css/main.25c3ef3c.css.map",
+    "main.773d02ea.js.map": "/enierymariana/static/js/main.773d02ea.js.map",
     "453.c862c3b3.chunk.js.map": "/enierymariana/static/js/453.c862c3b3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.445e5925.css",
-    "static/js/main.8a46df2c.js"
+    "static/css/main.25c3ef3c.css",
+    "static/js/main.773d02ea.js"
   ]
 }

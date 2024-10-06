@@ -4,8 +4,7 @@ import { useInView } from "react-intersection-observer";
 import pasaporte1 from "../../assets/images/pasaporte.png";
 import { useNavigate } from "react-router-dom";
 import LottieAnimation from "../../components/AnimacionLottie";
-import BackgroundAnimation from "../../assets/animations/mapamundi.json"; 
-
+import BackgroundAnimation from "../../assets/animations/mapamundi.json";
 
 const Scene5: FC = () => {
   const navigate = useNavigate();
@@ -20,8 +19,12 @@ const Scene5: FC = () => {
   };
   return (
     <>
-     <div className="absolute inset-0 w-full h-full -z-1 ">
-        <LottieAnimation animationData={BackgroundAnimation} loop={true} autoplay={true} />
+      <div className="absolute inset-0 w-full h-full -z-1 ">
+        <LottieAnimation
+          animationData={BackgroundAnimation}
+          loop={true}
+          autoplay={true}
+        />
       </div>
       <div
         ref={ref} // Ref necesario para detectar la visibilidad
@@ -38,7 +41,6 @@ const Scene5: FC = () => {
         </motion.div>
 
         <motion.div
-     
           initial={{ opacity: 0, y: -50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}} // Anima solo si está en vista
           transition={{ duration: 1 }}
@@ -49,9 +51,8 @@ const Scene5: FC = () => {
           >
             VER INVITACIÓN
           </button>
-
-          
         </motion.div>
+        <div className="h-10 md:h-0"></div>
       </div>
     </>
   );

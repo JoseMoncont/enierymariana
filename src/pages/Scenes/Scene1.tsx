@@ -54,6 +54,7 @@ const Scene1: FC = () => {
             El viaje de nuestras vidas comienza aquí.
           </p>
         </motion.div>
+        <div className="h-10 md:h-0"></div> 
       </div>
     </>
   );

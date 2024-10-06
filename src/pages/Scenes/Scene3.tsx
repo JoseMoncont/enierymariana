@@ -3,20 +3,23 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import image2 from "../../assets/images/image2.png";
 import LottieAnimation from "../../components/AnimacionLottie";
-import BackgroundAnimation from "../../assets/animations/mapamundi.json"; 
-
+import BackgroundAnimation from "../../assets/animations/mapamundi.json";
 
 const Scene3: FC = () => {
   // Detecta si el componente está en el viewport
   const { ref, inView } = useInView({
     triggerOnce: false, // Para que la animación ocurra solo la primera vez que aparece
-    threshold: 0.3,    // Inicia la animación cuando el 30% de la escena es visible
+    threshold: 0.3, // Inicia la animación cuando el 30% de la escena es visible
   });
 
   return (
     <>
-     <div className="absolute inset-0 w-full h-full -z-1 ">
-        <LottieAnimation animationData={BackgroundAnimation} loop={true} autoplay={true} />
+      <div className="absolute inset-0 w-full h-full -z-1 ">
+        <LottieAnimation
+          animationData={BackgroundAnimation}
+          loop={true}
+          autoplay={true}
+        />
       </div>
       <div
         ref={ref} // Ref necesario para detectar la visibilidad
@@ -40,10 +43,11 @@ const Scene3: FC = () => {
           transition={{ delay: 0.5, duration: 1 }}
         >
           <p className="text-white text-center text-xxl carattere-text">
-            Exercitation do laborum non cupidatat elit officia culpa voluptate ea.
-            Incididunt non aliqua aliqua sunt.
+            Exercitation do laborum non cupidatat elit officia culpa voluptate
+            ea. Incididunt non aliqua aliqua sunt.
           </p>
         </motion.div>
+        <div className="h-10 md:h-0"></div>
       </div>
     </>
   );

@@ -1,23 +1,27 @@
 {
   "files": {
-    "main.css": "/enierymariana/static/css/main.25c3ef3c.css",
-    "main.js": "/enierymariana/static/js/main.773d02ea.js",
+    "main.css": "/enierymariana/static/css/main.69b76997.css",
+    "main.js": "/enierymariana/static/js/main.8438e4d6.js",
     "static/js/453.c862c3b3.chunk.js": "/enierymariana/static/js/453.c862c3b3.chunk.js",
     "static/media/pasaporte.png": "/enierymariana/static/media/pasaporte.ea220d072e8e9c1f0ad1.png",
-    "static/media/Pasaporte-Up.png": "/enierymariana/static/media/Pasaporte-Up.a91b6094ed53fcac4fa7.png",
-    "static/media/Pasaporte-Down.png": "/enierymariana/static/media/Pasaporte-Down.25a4a67e28840c704cf9.png",
     "static/media/image1.png": "/enierymariana/static/media/image1.75b0eae203ab44484a00.png",
     "static/media/image2.png": "/enierymariana/static/media/image2.d8d2b2f2386b8c041b71.png",
-    "static/media/image3.png": "/enierymariana/static/media/image3.48d1f1629e740983fa62.png",
+    "static/media/Pasaporte-Up.png": "/enierymariana/static/media/Pasaporte-Up.ea6b65160af6005aa711.png",
+    "static/media/Pasaporte-Down.png": "/enierymariana/static/media/Pasaporte-Down.7d26c287e6ccf2d0050d.png",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/enierymariana/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/fontawesome-webfont.eot": "/enierymariana/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/enierymariana/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/enierymariana/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/enierymariana/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "static/media/fotoP.jpg": "/enierymariana/static/media/fotoP.b648cfffe6ae44733488.jpg",
     "static/media/EyM.png": "/enierymariana/static/media/EyM.b059d93c58d55725a76f.png",
     "index.html": "/enierymariana/index.html",
-    "main.25c3ef3c.css.map": "/enierymariana/static/css/main.25c3ef3c.css.map",
-    "main.773d02ea.js.map": "/enierymariana/static/js/main.773d02ea.js.map",
+    "main.69b76997.css.map": "/enierymariana/static/css/main.69b76997.css.map",
+    "main.8438e4d6.js.map": "/enierymariana/static/js/main.8438e4d6.js.map",
     "453.c862c3b3.chunk.js.map": "/enierymariana/static/js/453.c862c3b3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.25c3ef3c.css",
-    "static/js/main.773d02ea.js"
+    "static/css/main.69b76997.css",
+    "static/js/main.8438e4d6.js"
   ]
 }

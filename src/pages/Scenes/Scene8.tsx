@@ -1,11 +1,11 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import image3 from "../../assets/images/image3.png";
+import image1 from "../../assets/images/image1.png";
 import LottieAnimation from "../../components/AnimacionLottie";
 import BackgroundAnimation from "../../assets/animations/mapamundi.json";
 
-const Scene4: FC = () => {
+const Scene8: FC = () => {
   // Detecta si el componente está en el viewport
   const { ref, inView } = useInView({
     triggerOnce: false, // Para que la animación ocurra solo la primera vez que aparece
@@ -26,24 +26,14 @@ const Scene4: FC = () => {
         className="h-screen w-screen flex flex-col items-center justify-center"
       >
         {/* Animación de la imagen */}
-        <motion.div
+        {/* <motion.div
           className="m-10 md:w-96"
           initial={{ opacity: 0, y: -50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}} // Anima solo si está en vista
           transition={{ duration: 1 }}
         >
-          {/* <img src={image3} alt="Imagen" /> */}
-        </motion.div>
-
-         {/* Animación del texto */}
-         <motion.div
-          className="w-72"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={inView ? { opacity: 1, scale: 1 } : {}} // Anima solo si está en vista
-          transition={{ delay: 0.5, duration: 1 }}
-        >
-          <p className="text-3xl crimson-text text-white text-center mb-5">¡NOS CASAMOS!</p>
-        </motion.div>
+          <img src={image1} alt="Imagen" />
+        </motion.div> */}
 
         {/* Animación del texto */}
         <motion.div
@@ -53,9 +43,7 @@ const Scene4: FC = () => {
           transition={{ delay: 0.5, duration: 1 }}
         >
           <p className="text-white text-center text-xxl carattere-text">
-            Es un honor para nosotros invitarlos a celebrar este día tan
-            especial. Queremos compartir nuestra alegría con ustedes y pasar
-            momentos inolvidables.
+            Codigo de vestir + restricciones
           </p>
         </motion.div>
         <div className="h-10 md:h-0"></div>
@@ -64,4 +52,4 @@ const Scene4: FC = () => {
   );
 };
 
-export default Scene4;
+export default Scene8;

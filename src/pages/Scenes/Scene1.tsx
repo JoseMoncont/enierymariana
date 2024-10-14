@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 import LottieAnimation from "../../components/AnimacionLottie";
 import Mapa from "../../assets/animations/mapa.json";
 import EyM from "../../assets/images/EyM.png";
-import BackgroundAnimation from "../../assets/animations/mapamundi.json"; 
+import BackgroundAnimation from "../../assets/animations/mapamundi.json";
 
 const Scene1: FC = () => {
   // Hook para detectar si la escena está visible
@@ -17,7 +17,11 @@ const Scene1: FC = () => {
     <>
       {/* Contenedor de la animación de fondo */}
       <div className="absolute inset-0 w-full h-full -z-1 ">
-        <LottieAnimation animationData={BackgroundAnimation} loop={true} autoplay={true} />
+        <LottieAnimation
+          animationData={BackgroundAnimation}
+          loop={true}
+          autoplay={true}
+        />
       </div>
 
       <div
@@ -54,7 +58,7 @@ const Scene1: FC = () => {
             El viaje de nuestras vidas comienza aquí.
           </p>
         </motion.div>
-        <div className="h-10 md:h-0"></div> 
+        <div className="h-10 md:h-0"></div>
       </div>
     </>
   );

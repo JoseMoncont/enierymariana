@@ -1,84 +1,44 @@
-import { FC, useState } from "react";
+import { FC } from "react";
 import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
+import image1 from "../../assets/images/image1.png";
 import LottieAnimation from "../../components/AnimacionLottie";
-import BookCover from "../../assets/images/pasaporte.png"; // Imagen de la portada
-import PassportUp from "../../assets/images/Pasaporte-Up.png"; // Imagen de la página 2
-import PassportDown from "../../assets/images/Pasaporte-Down.png"; // Imagen de la página 3
-//import BookOpeningAnimation from "../../assets/animations/book_opening.json"; // Animación Lottie (si la tienes)
+import BackgroundAnimation from "../../assets/animations/mapamundi.json";
 
 const Scene6: FC = () => {
-  const [isOpen, setIsOpen] = useState(false); // Estado para controlar si el libro está abierto o cerrado
-
-  const handleOpenBook = () => {
-    setIsOpen(true);
-  };
+  // Detecta si el componente está en el viewport
+  const { ref, inView } = useInView({
+    triggerOnce: false, // Para que la animación ocurra solo la primera vez que aparece
+    threshold: 0.3, // Inicia la animación cuando el 30% de la escena es visible
+  });
 
   return (
-    <div className="h-screen w-screen flex flex-col items-center justify-center relative">
-      {/* Animación de Lottie para abrir el libro */}
-      {/* {isOpen && (
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1 }}
-          className="absolute top-0 left-0 w-full h-full -z-10"
-        >
-          <LottieAnimation
-            animationData={BookOpeningAnimation}
-            loop={false}
-            autoplay={true}
-          />
-        </motion.div>
-      )} */}
-
-      {/* Portada del libro */}
-
-      <div className="rounded-xl">
-        <motion.div
-          className="relative cursor-pointer"
-          onClick={handleOpenBook}
-          initial={{ rotateY: 0 }}
-          animate={isOpen ? { rotateY: 180 } : {}}
-          transition={{ duration: 1.5 }}
-        >
-          {/* Si el libro está abierto, no mostramos la portada */}
-          {!isOpen && (
-            <img
-              src={BookCover}
-              alt="Book Cover"
-              className="w-96 h-100 shadow-lg rounded-r-xl pt-5 pb-5 "
-            />
-          )}
-        </motion.div>
+    <>
+      <div className="absolute inset-0 w-full h-full -z-1 ">
+        <LottieAnimation
+          animationData={BackgroundAnimation}
+          loop={true}
+          autoplay={true}
+        />
       </div>
-
-      {/* Páginas internas del libro, solo visibles cuando el libro está abierto */}
-      {isOpen && (
-        <div className="bg-white rounded-xl">
-          {/* Página 2 */}
-          <div className="content-center">
-            <motion.div
-              initial={{ opacity: 0, y: -50 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: 1, duration: 0.5 }}
-              className="w-96 h-64 shadow-lg"
-            >
-              <img src={PassportUp} alt="Page 2" className="h-fill" />
-            </motion.div>
-          </div>
-
-          {/* Página 3 */}
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.2, duration: 0.5 }}
-            className="w-96 h-64 shadow-lg"
-          >
-            <img src={PassportDown} alt="Page 3" />
-          </motion.div>
-        </div>
-      )}
-    </div>
+      <div
+        ref={ref} // Ref necesario para detectar la visibilidad
+        className="h-screen w-screen flex flex-col items-center justify-center"
+      >
+        {/* Animación del texto */}
+        <motion.div
+          className="w-72"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={inView ? { opacity: 1, scale: 1 } : {}} // Anima solo si está en vista
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+          <p className="text-white text-center text-xxl carattere-text">
+            Frase enamorados
+          </p>
+        </motion.div>
+        <div className="h-10 md:h-0"></div>
+      </div>
+    </>
   );
 };
 

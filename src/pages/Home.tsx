@@ -6,6 +6,12 @@ import Scene3 from "./Scenes/Scene3";
 import Scene4 from "./Scenes/Scene4";
 import Scene5 from "./Scenes/Scene5";
 import Scene6 from "./Scenes/Scene6";
+import Scene7 from "./Scenes/Scene7";
+import Scene8 from "./Scenes/Scene8";
+import Scene9 from "./Scenes/Scene9";
+import Scene10 from "./Scenes/Scene10";
+import Scene11 from "./Scenes/Scene11";
+import Scene12 from "./Scenes/Scene12";
 
 const Home: React.FC = () => {
   return (
@@ -27,12 +33,30 @@ const Home: React.FC = () => {
         <Scene4></Scene4>
       </div>
       {/* Scene 5 */}
-      {/* <div className="scroll-section">
+      <div className="scroll-section">
         <Scene5></Scene5>
-      </div> */}
+      </div>
 
       <div className="scroll-section">
         <Scene6></Scene6>
+      </div>
+      {/* <div className="scroll-section">
+        <Scene7></Scene7>
+      </div> */}
+      <div className="scroll-section">
+        <Scene8></Scene8>
+      </div>
+      <div className="scroll-section">
+        <Scene9></Scene9>
+      </div>
+      <div className="scroll-section">
+        <Scene10></Scene10>
+      </div>
+      <div className="scroll-section">
+        <Scene11></Scene11>
+      </div>
+      <div className="scroll-section">
+        <Scene12></Scene12>
       </div>
     </div>
   );

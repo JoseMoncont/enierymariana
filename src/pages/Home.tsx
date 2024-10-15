@@ -40,14 +40,14 @@ const Home: React.FC = () => {
       <div className="scroll-section">
         <Scene6></Scene6>
       </div>
-      {/* <div className="scroll-section">
-        <Scene7></Scene7>
-      </div> */}
-      <div className="scroll-section">
-        <Scene8></Scene8>
-      </div>
       <div className="scroll-section">
         <Scene9></Scene9>
+      </div>
+      <div className="scroll-section">
+        <Scene7></Scene7>
+      </div>
+      <div className="scroll-section">
+        <Scene8></Scene8>
       </div>
       <div className="scroll-section">
         <Scene10></Scene10>

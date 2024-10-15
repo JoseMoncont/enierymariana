@@ -32,8 +32,8 @@ const Scene6: FC = () => {
           animate={inView ? { opacity: 1, scale: 1 } : {}} // Anima solo si está en vista
           transition={{ delay: 0.5, duration: 1 }}
         >
-          <p className="text-white text-center text-xxl carattere-text">
-            Frase enamorados
+          <p className="text-white text-center text-4xl carattere-text">
+          Hemos encontrado el amor en diferentes latitudes, y ahora uniremos nuestras vidas para siempre
           </p>
         </motion.div>
         <div className="h-10 md:h-0"></div>

@@ -33,10 +33,10 @@ const Scene10: FC = () => {
       {/* Contenedor de la tarjeta */}
       <div
         ref={ref} // Ref necesario para detectar la visibilidad
-        className="relative w-72 cursor-pointer  border rounded-t-full  content-start pt-14   h-3/4"
+        className="relative w-72 cursor-pointer  border rounded-full   content-start pt-14   h-3/4"
         onClick={handleFlip}
       >
-         <div className="absolute -bottom-44 -right-24 -translate-y-1/2 w-48 z-20">
+        <div className="absolute -bottom-14 -right-14 -translate-y-1/2 w-36 z-20">
           <motion.div
             className="m-10 md:w-32 "
             initial={{ opacity: 0, y: -50 }}
@@ -71,7 +71,7 @@ const Scene10: FC = () => {
             </div>
           </div>
 
-          <p className="text-white carattere-text text-4xl mt-5 text-center">
+          <p className="text-white luxurious text-6xl mt-5 text-center">
             Regalos
           </p>
         </motion.div>
@@ -104,7 +104,7 @@ const Scene10: FC = () => {
 
         {/* Parte trasera de la tarjeta */}
         <motion.div
-          className="absolute w-full h-full  text-white shadow-lg  flex items-start pt-10 justify-center text-sm font-bold"
+          className="absolute w-full h-full  text-white shadow-lg  flex items-start pt-5 justify-center text-sm font-bold"
           initial={{ rotateY: -180 }}
           animate={{ rotateY: isFlipped ? 0 : -180 }}
           transition={{ duration: 0.8 }}

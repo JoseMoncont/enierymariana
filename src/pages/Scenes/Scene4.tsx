@@ -4,6 +4,7 @@ import { useInView } from "react-intersection-observer";
 import image3 from "../../assets/images/image3.png";
 import LottieAnimation from "../../components/AnimacionLottie";
 import BackgroundAnimation from "../../assets/animations/mapamundi.json";
+import EnierMariana from "../../assets/animations/hearth.json";
 
 const Scene4: FC = () => {
   // Detecta si el componente está en el viewport
@@ -35,16 +36,6 @@ const Scene4: FC = () => {
           {/* <img src={image3} alt="Imagen" /> */}
         </motion.div>
 
-         {/* Animación del texto */}
-         <motion.div
-          className="w-72"
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={inView ? { opacity: 1, scale: 1 } : {}} // Anima solo si está en vista
-          transition={{ delay: 0.5, duration: 1 }}
-        >
-          <p className="text-3xl crimson-text text-white text-center mb-5">¡NOS CASAMOS!</p>
-        </motion.div>
-
         {/* Animación del texto */}
         <motion.div
           className="w-72"
@@ -52,7 +43,28 @@ const Scene4: FC = () => {
           animate={inView ? { opacity: 1, scale: 1 } : {}} // Anima solo si está en vista
           transition={{ delay: 0.5, duration: 1 }}
         >
-          <p className="text-white text-center text-xxl carattere-text">
+          <p className="text-6xl luxurious text-white text-center mb-5">
+            Nos Casamos!
+          </p>
+        </motion.div>
+
+        {/* Animación del texto */}
+         {/* Animación del mapa */}
+         <motion.div
+          className="ms-5 me-5 md:w-96"
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+          <LottieAnimation animationData={EnierMariana} loop={true} autoplay={true} />
+        </motion.div>
+        <motion.div
+          className="w-72"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={inView ? { opacity: 1, scale: 1 } : {}} // Anima solo si está en vista
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+          <p className="text-white text-center text-lg petit">
             Es un honor para nosotros invitarlos a celebrar este día tan
             especial. Queremos compartir nuestra alegría con ustedes y pasar
             momentos inolvidables.

@@ -1,9 +1,11 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import image1 from "../../assets/images/image1.png";
 import LottieAnimation from "../../components/AnimacionLottie";
+import EventTimeline from "../../components/EventTimeLine";
 import BackgroundAnimation from "../../assets/animations/mapamundi.json";
+import flor from "../../assets/animations/flores-v.json";
+import img from "../../assets/images/event.png";
 
 const Scene7: FC = () => {
   // Detecta si el componente está en el viewport
@@ -23,29 +25,41 @@ const Scene7: FC = () => {
       </div>
       <div
         ref={ref} // Ref necesario para detectar la visibilidad
-        className="h-screen w-screen flex flex-col items-center justify-center"
+        className="h-screen w-screen flex flex-col items-center justify-center "
       >
-        {/* Animación de la imagen */}
-        {/* <motion.div
+        <motion.div
           className="m-10 md:w-96"
           initial={{ opacity: 0, y: -50 }}
           animate={inView ? { opacity: 1, y: 0 } : {}} // Anima solo si está en vista
           transition={{ duration: 1 }}
         >
-          <img src={image1} alt="Imagen" />
-        </motion.div> */}
+          <div className="flex justify-center">
+            <div className="w-10 flex justify-center ">
+              <LottieAnimation
+                animationData={flor}
+                loop={false}
+                autoplay={true}
+              />
+            </div>
+            <div className="flex justify-center relative rounded-full mb-3">
+              {" "}
+              <img src={img} alt="" className="w-16 " />
+            </div>
+          </div>
 
-        {/* Animación del texto */}
+          <p className="text-white luxurious text-6xl mt-5 text-center">
+            Programa
+          </p>
+        </motion.div>
         <motion.div
           className="w-72"
           initial={{ opacity: 0, scale: 0.8 }}
           animate={inView ? { opacity: 1, scale: 1 } : {}} // Anima solo si está en vista
           transition={{ delay: 0.5, duration: 1 }}
         >
-          <p className="text-white text-center text-xxl carattere-text">
-            Pase de abordar
-          </p>
+          <EventTimeline></EventTimeline>
         </motion.div>
+
         <div className="h-10 md:h-0"></div>
       </div>
     </>

@@ -42,9 +42,8 @@ const Scene3: FC = () => {
           animate={inView ? { opacity: 1, scale: 1 } : {}} // Anima solo si está en vista
           transition={{ delay: 0.5, duration: 1 }}
         >
-          <p className="text-white text-center text-xxl carattere-text">
-            Exercitation do laborum non cupidatat elit officia culpa voluptate
-            ea. Incididunt non aliqua aliqua sunt.
+          <p className="text-white text-center text-xxl petit">
+            Juntos, nuestro amor no tiene fronteras, solo destinos por descubrir
           </p>
         </motion.div>
         <div className="h-10 md:h-0"></div>

@@ -27,7 +27,7 @@ const Scene9: FC = () => {
         ref={ref} // Ref necesario para detectar la visibilidad
         className="h-screen w-screen flex flex-col items-center justify-center  content-center z-10"
       >
-        <div className="absolute -bottom-14 -left-2 -translate-y-1/2 w-48 z-20 md:left-1/4 md:-bottom-36">
+        <div className="absolute -bottom-5 -left-6 -translate-y-1/2 w-48 z-20 md:left-1/4 md:-bottom-36">
           <motion.div
             className="m-10 md:w-48 "
             initial={{ opacity: 0, y: -50 }}
@@ -43,7 +43,7 @@ const Scene9: FC = () => {
           </motion.div>
         </div>
 
-        <div className="border rounded-t-full px-10 content-center  py-10 h-3/4">
+        <div className="border rounded-t-full px-10 content-center  py-10 ">
           <motion.div
             className="m-10 md:w-96 "
             initial={{ opacity: 0, y: -50 }}
@@ -64,7 +64,7 @@ const Scene9: FC = () => {
               </div>
             </div>
 
-            <p className="text-white carattere-text text-4xl mt-5 text-center">
+            <p className="text-white luxurious text-6xl mt-5 text-center">
               Ubicación
             </p>
           </motion.div>
@@ -81,13 +81,6 @@ const Scene9: FC = () => {
               Puerto Colombia, ATL{" "}
             </p>
             <div className="flex justify-center rounded-lg  mt-5">
-              {" "}
-              {/* <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1694.71636915815!2d-74.90287765850867!3d11.039379386313811!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8ef42bccc2a945a5%3A0x33b36f31f3995106!2sCasandrea%20Country%20Club!5e0!3m2!1ses!2sco!4v1728864515316!5m2!1ses!2sco"
-              height="100"
-              loading="lazy"
-              className="w-full "
-            ></iframe> */}
               <button
                 className="border w-36 text-white text-center poppins-regular text-sm  p-3"
                 onClick={() =>

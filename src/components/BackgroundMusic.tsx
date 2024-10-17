@@ -21,7 +21,7 @@ const BackgroundMusic = () => {
   return (
     <div className="">
       <audio id="background-music" loop>
-        <source src="../assets/song/perfect.mp3" type="audio/mp3" />
+        <source src="../assets/songs/perfect.mp3" type="audio/mp3" />
       </audio>
     </div>
   );

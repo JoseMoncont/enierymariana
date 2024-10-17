@@ -11,17 +11,13 @@ import Scene9 from "./Scenes/Scene9";
 import Scene10 from "./Scenes/Scene10";
 import Scene11 from "./Scenes/Scene11";
 import Scene12 from "./Scenes/Scene12";
-import BackgroundMusic from "../components/BackgroundMusic";
 
 
 const Home: React.FC = () => {
   return (
     <div className="scroll-container fondo-oscuro ">
-      <BackgroundMusic></BackgroundMusic>
-      <audio id="background-music" loop>
-        <source src={"../assets/song/perfect.mp3"} type="audio/mp3" />
-        Your browser does not support the audio element.
-      </audio>
+    
+
       {/* Scene 1 */}
       <div className="scroll-section">
         <Scene1></Scene1>

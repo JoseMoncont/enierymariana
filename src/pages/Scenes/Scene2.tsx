@@ -32,7 +32,7 @@ const Scene2: FC = () => {
           animate={inView ? { opacity: 1, y: 0 } : {}} // Anima solo si está en vista
           transition={{ duration: 1 }}
         >
-          <img src={image1} alt="Imagen" />
+          <img src={image1} alt="Imagen" loading="lazy" />
         </motion.div>
 
         {/* Animación del texto */}

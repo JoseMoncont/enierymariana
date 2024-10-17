@@ -1,9 +1,10 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import image1 from "../../assets/images/image1.png";
+import image1 from "../../assets/images/dibujo.png";
 import LottieAnimation from "../../components/AnimacionLottie";
 import BackgroundAnimation from "../../assets/animations/mapamundi.json";
+import flor from "../../assets/animations/flores-h.json";
 
 const Scene6: FC = () => {
   // Detecta si el componente está en el viewport
@@ -25,6 +26,20 @@ const Scene6: FC = () => {
         ref={ref} // Ref necesario para detectar la visibilidad
         className="h-screen w-screen flex flex-col items-center justify-center"
       >
+ {/* Animación del texto */}
+ <motion.div
+          className="w-72 mb-5"
+          initial={{ opacity: 0, scale: 0.8 }}
+          animate={inView ? { opacity: 1, scale: 1 } : {}} // Anima solo si está en vista
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+         <img src={image1} alt="" />
+        </motion.div>
+
+
+
+
+
         {/* Animación del texto */}
         <motion.div
           className="w-72"
@@ -32,9 +47,18 @@ const Scene6: FC = () => {
           animate={inView ? { opacity: 1, scale: 1 } : {}} // Anima solo si está en vista
           transition={{ delay: 0.5, duration: 1 }}
         >
-          <p className="text-white text-center text-4xl carattere-text">
-          Hemos encontrado el amor en diferentes latitudes, y ahora uniremos nuestras vidas para siempre
+          <p className="text-white text-center text-lg petit">
+            Hemos encontrado el amor en diferentes latitudes, y ahora uniremos
+            nuestras vidas para siempre
           </p>
+        </motion.div>
+        <motion.div
+          className="ms-5 me-5 md:w-96 w-52"
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+          <LottieAnimation animationData={flor} loop={true} autoplay={true} />
         </motion.div>
         <div className="h-10 md:h-0"></div>
       </div>

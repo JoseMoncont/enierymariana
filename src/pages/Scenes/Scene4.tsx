@@ -27,16 +27,24 @@ const Scene4: FC = () => {
         className="h-screen w-screen flex flex-col items-center justify-center"
       >
         {/* Animación de la imagen */}
-        <motion.div
-          className="m-10 md:w-96"
-          initial={{ opacity: 0, y: -50 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}} // Anima solo si está en vista
-          transition={{ duration: 1 }}
-        >
-          {/* <img src={image3} alt="Imagen" /> */}
-        </motion.div>
 
         {/* Animación del texto */}
+
+        {/* Animación del texto */}
+        {/* Animación del mapa */}
+        <motion.div
+          className="ms-5 me-5 md:w-96 w-60"
+          initial={{ opacity: 0, y: 50 }}
+          animate={inView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+          <LottieAnimation
+            animationData={EnierMariana}
+            loop={true}
+            autoplay={true}
+          />
+        </motion.div>
+
         <motion.div
           className="w-72"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -47,17 +55,6 @@ const Scene4: FC = () => {
             Nos Casamos!
           </p>
         </motion.div>
-
-        {/* Animación del texto */}
-         {/* Animación del mapa */}
-         <motion.div
-          className="ms-5 me-5 md:w-96"
-          initial={{ opacity: 0, y: 50 }}
-          animate={inView ? { opacity: 1, y: 0 } : {}}
-          transition={{ delay: 0.5, duration: 1 }}
-        >
-          <LottieAnimation animationData={EnierMariana} loop={true} autoplay={true} />
-        </motion.div>
         <motion.div
           className="w-72"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -65,9 +62,8 @@ const Scene4: FC = () => {
           transition={{ delay: 0.5, duration: 1 }}
         >
           <p className="text-white text-center text-lg petit">
-            Es un honor para nosotros invitarlos a celebrar este día tan
-            especial. Queremos compartir nuestra alegría con ustedes y pasar
-            momentos inolvidables.
+            Nos honra invitarlos a compartir nuestra alegría en este día tan
+            especial y vivir juntos momentos inolvidables
           </p>
         </motion.div>
         <div className="h-10 md:h-0"></div>

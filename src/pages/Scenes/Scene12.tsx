@@ -7,7 +7,7 @@ import image1 from "../../assets/images/qr-asistencia.png"; // Opcional: Imagen 
 
 const Scene12: FC = () => {
   const handleWhatsAppClick = () => {
-    const phoneNumber = "+573216620954";
+    const phoneNumber = "+525625712319";
     const message = "Hola, me gustaria confirmar la asistencia a tu boda";
     const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
       message

@@ -4,7 +4,7 @@ import { useInView } from "react-intersection-observer";
 
 import LottieAnimation from "../../components/AnimacionLottie";
 import BackgroundAnimation from "../../assets/animations/mapamundi.json";
-import Novios from "../../assets/animations/novios.json";
+import Novios from "../../assets/animations/hearth.json";
 import CountdownTimer from "../../components/CountdownTimer";
 
 const Scene11: FC = () => {

@@ -58,7 +58,7 @@ const Scene10: FC = () => {
           transition={{ duration: 1 }}
         >
           <div className="flex justify-center">
-            <div className="absolute flex justify-center h-20 mt-6 z-10 ">
+            <div className="absolute flex justify-center w-32 mt-6 z-10 ">
               <LottieAnimation
                 animationData={flor}
                 loop={true}
@@ -98,6 +98,7 @@ const Scene10: FC = () => {
             </p>
             <div className="text-center me-5 mt-5">
               <span className="material-symbols-outlined">360</span>
+              <p className="poppins-regular text-xs text-gray-400">Toca para girar</p>
             </div>
           </div>
         </motion.div>

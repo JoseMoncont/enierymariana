@@ -42,8 +42,8 @@ const Scene5: FC = () => {
             }}
           >
             <img src={BookCover} alt="Book Cover" className="w-full h-auto" />
-            <p className="text-sm text-center text-white mt-3 mb-3">
-              Presione para abrir
+            <p className="text-xs poppins-regular  text-center text-white mt-3 mb-3">
+              Toque para abrir
             </p>
           </motion.div>
 

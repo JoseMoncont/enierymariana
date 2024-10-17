@@ -51,7 +51,7 @@ const Scene9: FC = () => {
             transition={{ duration: 1 }}
           >
             <div className="flex justify-center">
-              <div className="w-10 flex justify-center ">
+              <div className="w-10 flex justify-center relative ">
                 <LottieAnimation
                   animationData={flor}
                   loop={false}

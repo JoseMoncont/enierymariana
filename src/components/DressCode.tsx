@@ -13,7 +13,7 @@ const DressCode = () => {
         Para esta ocasión especial, les pedimos que sigan el siguiente código de
         vestimenta:
       </p> */}
-      <ul className="list-none mb-4 border border-dashed p-3">
+      <ul className="list-none mb-4 border border-dashed p-3 rounded-r-full rounded-l-full">
         <li className="text-lg text-gray-100 flex fuente-principal justify-center">
           <img src={img2} alt="" className="h-6 w-6 me-5" />
           Vestido largo

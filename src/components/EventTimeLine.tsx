@@ -32,14 +32,14 @@ const timelineContainer: React.CSSProperties = {
   display: "flex",
   flexDirection: "column",
   alignItems: "center",
-  gap: "25px",
+  gap: "20px",
   marginTop: "20px",
 };
 
 const timelineItem: React.CSSProperties = {
   display: "flex",
   alignItems: "center",
-  gap: "20px",
+  gap: "15px",
   borderLeft: "2px solid #ccc",
   padding: "10px 20px",
   position: "relative",

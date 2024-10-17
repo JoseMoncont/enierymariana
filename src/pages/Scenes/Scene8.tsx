@@ -48,7 +48,7 @@ const Scene8: FC = () => {
             </div>
           </div>
 
-          <p className="text-white luxurious text-6xl mt-5 text-center">
+          <p className="text-white luxurious text-5xl mt-5 text-center ">
             Código de Vestimenta
           </p>
         </motion.div>

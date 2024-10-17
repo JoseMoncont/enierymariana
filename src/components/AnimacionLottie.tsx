@@ -11,7 +11,6 @@ interface LottieAnimationProps {
 
 const LottieAnimation: React.FC<LottieAnimationProps> = ({
   animationData,
-
   loop = true,
   autoplay = true,
 }) => {

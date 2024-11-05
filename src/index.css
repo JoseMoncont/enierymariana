@@ -327,3 +327,22 @@ p {
   font-weight: 400;
   font-style: normal;
 }
+
+
+.color3{
+  background-color: #d0e8ff;
+
+}
+.colorPrimario{
+
+  color: #1D2739;
+}
+
+.colorSecundario{
+  color: #597B9C;
+}
+
+.colorTerciario{
+
+  color: #8EB5DD;
+}

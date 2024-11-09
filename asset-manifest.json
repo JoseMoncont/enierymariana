@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/enierymariana/static/css/main.0e2304a4.css",
-    "main.js": "/enierymariana/static/js/main.5cf91b57.js",
+    "main.css": "/enierymariana/static/css/main.96e5fc90.css",
+    "main.js": "/enierymariana/static/js/main.ada82357.js",
     "static/js/453.c862c3b3.chunk.js": "/enierymariana/static/js/453.c862c3b3.chunk.js",
+    "static/media/audio1.mp3": "/enierymariana/static/media/audio1.dbe4fece73137424b928.mp3",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/enierymariana/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
     "static/media/fontawesome-webfont.eot": "/enierymariana/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
     "static/media/fontawesome-webfont.ttf?v=4.7.0": "/enierymariana/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/enierymariana/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/enierymariana/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
     "index.html": "/enierymariana/index.html",
-    "main.0e2304a4.css.map": "/enierymariana/static/css/main.0e2304a4.css.map",
-    "main.5cf91b57.js.map": "/enierymariana/static/js/main.5cf91b57.js.map",
+    "main.96e5fc90.css.map": "/enierymariana/static/css/main.96e5fc90.css.map",
+    "main.ada82357.js.map": "/enierymariana/static/js/main.ada82357.js.map",
     "453.c862c3b3.chunk.js.map": "/enierymariana/static/js/453.c862c3b3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.0e2304a4.css",
-    "static/js/main.5cf91b57.js"
+    "static/css/main.96e5fc90.css",
+    "static/js/main.ada82357.js"
   ]
 }

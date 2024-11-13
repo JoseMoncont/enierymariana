@@ -1,15 +1,14 @@
 import { motion } from "framer-motion";
 import { FC } from "react";
 import LottieAnimation from "../../../components/AnimacionLottie";
-import Animacion from "../../..//assets/animations/save.json";
+import Animacion from "../../..//assets/animations/sd.json";
 import { useInView } from "react-intersection-observer";
 
 const SceneSTD1: FC = () => {
-
-    const { ref, inView } = useInView({
-        triggerOnce: false,
-        threshold: 0.01,
-      });
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.01,
+  });
   return (
     <>
       <div

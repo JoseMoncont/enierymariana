@@ -333,7 +333,9 @@ p {
   background-color: #d0e8ff;
 
 }
-.colorPrimario{
+.colorPrimario
+{
+  border-color: #1D2739;
 
   color: #1D2739;
 }

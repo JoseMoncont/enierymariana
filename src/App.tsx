@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import SaveDate from "./pages/SaveDate";
 import cancion from "./assets/audio/audio1.mp3";
-import Home from "./pages/Home";
 
 const App = () => {
   const audioRef = useRef<HTMLAudioElement>(null);

@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/enierymariana/static/css/main.9b289e0a.css",
-    "main.js": "/enierymariana/static/js/main.c1b91acb.js",
+    "main.css": "/enierymariana/static/css/main.6784afe4.css",
+    "main.js": "/enierymariana/static/js/main.36e99951.js",
     "static/js/453.c862c3b3.chunk.js": "/enierymariana/static/js/453.c862c3b3.chunk.js",
     "static/media/audio1.mp3": "/enierymariana/static/media/audio1.dbe4fece73137424b928.mp3",
     "static/media/fontawesome-webfont.svg?v=4.7.0": "/enierymariana/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
@@ -13,12 +13,12 @@
     "static/media/boda2.png": "/enierymariana/static/media/boda2.20d7e57deb61f3a6472e.png",
     "static/media/01.svg": "/enierymariana/static/media/01.6aff95f64c561fbac33ac8b2430bf556.svg",
     "index.html": "/enierymariana/index.html",
-    "main.9b289e0a.css.map": "/enierymariana/static/css/main.9b289e0a.css.map",
-    "main.c1b91acb.js.map": "/enierymariana/static/js/main.c1b91acb.js.map",
+    "main.6784afe4.css.map": "/enierymariana/static/css/main.6784afe4.css.map",
+    "main.36e99951.js.map": "/enierymariana/static/js/main.36e99951.js.map",
     "453.c862c3b3.chunk.js.map": "/enierymariana/static/js/453.c862c3b3.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9b289e0a.css",
-    "static/js/main.c1b91acb.js"
+    "static/css/main.6784afe4.css",
+    "static/js/main.36e99951.js"
   ]
 }

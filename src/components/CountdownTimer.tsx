@@ -4,7 +4,7 @@ import Flower from "../assets/animations/flores-h.json"; // Asegúrate de tener 
 
 const CountdownTimer = () => {
   const calculateTimeLeft = () => {
-    const eventDate = new Date("2025-03-14T04:00:00"); // Fecha del evento
+    const eventDate = new Date("2025-03-14T16:00:00"); // Fecha del evento
     const now = new Date();
     const difference = eventDate.getTime() - now.getTime();
 

@@ -5,8 +5,8 @@ import img3 from "../assets/images/cena.png";
 
 const EventTimeline = () => {
   const events = [
-    { title: "Recepción", time: "03:00 PM", image: img1 },
-    { title: "Ceremonia", time: "04:00 PM", image: img2 },
+    { title: "Recepción", time: "04:00 PM", image: img1 },
+    { title: "Ceremonia", time: "05:00 PM", image: img2 },
     { title: "Cena/Fiesta", time: "07:00 PM", image: img3 },
   ];
 

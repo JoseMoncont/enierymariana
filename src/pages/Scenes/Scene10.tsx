@@ -105,7 +105,7 @@ const Scene10: FC = () => {
 
         {/* Parte trasera de la tarjeta */}
         <motion.div
-          className="absolute w-full h-full  text-white shadow-lg  flex items-start pt-5 justify-center text-sm font-bold"
+          className="absolute w-full h-full  text-white   flex items-start pt-5 justify-center text-sm font-bold"
           initial={{ rotateY: -180 }}
           animate={{ rotateY: isFlipped ? 0 : -180 }}
           transition={{ duration: 0.8 }}
@@ -115,29 +115,30 @@ const Scene10: FC = () => {
           }}
         >
           <div className=" ">
-            <div className="mb-3 bg-slate-400 rounded-lg p-2 w-64">
-              <i className="fa fa-credit-card text-black"></i>
+            <div className="mb-3 bg-blue-900 rounded-lg p-2 w-64">
+              <i className="fa fa-credit-card text-white"></i>
               <p className="crimson-text text-sm poppins-regular">
-                NOMBRE DE BANCO
+                BBVA
               </p>
               <p className="crimson-text text-sm poppins-regular">
-                Tipo cuenta
+                Ahorros
               </p>
-              <p className="crimson-text text-xl poppins-bold">012345678910</p>
+              <p className="crimson-text text-xl poppins-bold">4152313988803057
+              </p>
               <p className="crimson-text text-sm poppins-regular">
-                Enier Montes
+                Mariana Pineda
               </p>
             </div>
-            <div className="mb-3 bg-cyan-600 rounded-lg p-2 w-64">
-              <i className="fa fa-credit-card text-black"></i>
+            <div className="mb-3 bg-purple-950 rounded-lg p-2 w-64">
+              <i className="fa fa-credit-card text-white"></i>
               <p className="crimson-text text-sm poppins-regular">
-                NOMBRE DE BANCO
+                NEQUI
               </p>
               <p className="crimson-text text-sm poppins-regular">
-                Tipo cuenta
+                Ahorros
               </p>
-              <p className="crimson-text text-xl poppins-bold">012345678910</p>
-              <p className="crimson-text text-sm poppins-regular">Mariana</p>
+              <p className="crimson-text text-xl poppins-bold">3104929287</p>
+              <p className="crimson-text text-sm poppins-regular">Enier Montes</p>
             </div>
             <div className="text-center mt-5">
               {" "}

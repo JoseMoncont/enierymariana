@@ -6,6 +6,7 @@ const DressCode = () => {
   const primaryColor = "#1D2739"; // PRIMARY
   const secondaryColor = "#597B9C"; // SECONDARY
   const lightColor = "#8EB5DD"; // LIGHT
+  const white = "#FFFFFF"
 
   return (
     <div className="m-5 p-5 rounded-lg text-center">
@@ -42,6 +43,12 @@ const DressCode = () => {
         <div
           className="w-12 h-16 rounded-full flex items-center justify-center"
           style={{ backgroundColor: lightColor }}
+        >
+          <p className="text-white font-bold text-center"></p>
+        </div>
+        <div
+          className="w-12 h-16 rounded-full flex items-center justify-center"
+          style={{ backgroundColor: white }}
         >
           <p className="text-white font-bold text-center"></p>
         </div>

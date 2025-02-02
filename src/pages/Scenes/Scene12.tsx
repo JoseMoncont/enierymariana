@@ -8,7 +8,15 @@ import image1 from "../../assets/images/qr-asistencia.png"; // Opcional: Imagen 
 const Scene12: FC = () => {
   const handleWhatsAppClick = () => {
     const phoneNumber = "+525625712319";
-    const message = "Hola, me gustaria confirmar la asistencia a tu boda";
+    const message = "Hola Mariana, me gustaria confirmar la asistencia a tu boda";
+    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
+      message
+    )}`;
+    window.open(url, "_blank");
+  };
+  const handleWhatsAppClick2 = () => {
+    const phoneNumber = "+573104929287";
+    const message = "Hola Enier, me gustaria confirmar la asistencia a tu boda";
     const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodeURIComponent(
       message
     )}`;
@@ -60,7 +68,7 @@ const Scene12: FC = () => {
                 <div>
                   <p className="text-gray-600 text-sm">Fecha</p>
                   <p className="text-lg font-semibold roboto-mono">
-                    XX/03/2025
+                    15/03/2025
                   </p>
                 </div>
               </div>
@@ -68,7 +76,7 @@ const Scene12: FC = () => {
               <div className="flex justify-between items-center mb-4">
                 <div>
                   <p className="text-gray-600 text-sm">Hora</p>
-                  <p className="text-lg font-semibold roboto-mono">X:00 PM</p>
+                  <p className="text-lg font-semibold roboto-mono">4:00 PM</p>
                 </div>
                 <div>
                   <p className="text-gray-600 text-sm">Puerta</p>
@@ -110,16 +118,22 @@ const Scene12: FC = () => {
           <div className="border-t-2 border-gray-800 border-dashed">
             {" "}
             <motion.div
-              className="flex justify-center p-4 "
+              className=" justify-center p-4 "
               initial={{ opacity: 0, scale: 0.8 }}
               animate={inView ? { opacity: 1, scale: 1 } : {}} // Anima solo si está en vista
               transition={{ delay: 0.8, duration: 0.8 }}
             >
               <button
                 onClick={handleWhatsAppClick}
-                className="btn btn-primary roboto-mono bg-orange-200 rounded-lg font-bold py-2 px-4"
+                className="btn btn-primary text-xs roboto-mono bg-orange-200 rounded-lg font-bold py-2 px-4 w-full"
               >
-                CONFIRMAR ASISTENCIA
+                CONFIRMAR ASISTENCIA CON MARIANA
+              </button>
+              <button
+                onClick={handleWhatsAppClick}
+                className="btn btn-primary text-xs roboto-mono bg-orange-200 rounded-lg font-bold py-2 px-4 w-full mt-2"
+              >
+                CONFIRMAR ASISTENCIA CON ENIER
               </button>
             </motion.div>
           </div>

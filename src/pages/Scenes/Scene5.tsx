@@ -1,8 +1,8 @@
 import { FC, useState } from "react";
 import { motion } from "framer-motion";
-import BookCover from "../../assets/images/pasaporte.png"; // Imagen de la portada
+import BookCover from "../../assets/images/pps.png"; // Imagen de la portada
 import PassportUp from "../../assets/images/Pasaporte-Up.png"; // Imagen de la página 2 (arriba)
-import PassportDown from "../../assets/images/Pasaporte-Down.png"; // Imagen de la página 3 (debajo)
+import PassportDown from "../../assets/images/pd.png"; // Imagen de la página 3 (debajo)
 import LottieAnimation from "../../components/AnimacionLottie";
 import BackgroundAnimation from "../../assets/animations/mapamundi.json";
 

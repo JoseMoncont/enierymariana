@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import image1 from "../../assets/images/dibujo.png";
+import image3 from "../../assets/images/image3.png";
 import LottieAnimation from "../../components/AnimacionLottie";
 import BackgroundAnimation from "../../assets/animations/mapamundi.json";
 import flor from "../../assets/animations/flores-h.json";
@@ -33,11 +33,9 @@ const Scene6: FC = () => {
           animate={inView ? { opacity: 1, scale: 1 } : {}} // Anima solo si está en vista
           transition={{ delay: 0.5, duration: 1 }}
         >
-         <img src={image1} alt="" />
+         <img src={image3} alt="" />
         </motion.div>
-
-
-
+      
 
 
         {/* Animación del texto */}

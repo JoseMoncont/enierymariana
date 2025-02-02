@@ -1,5 +1,7 @@
 import { useEffect, useRef } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SaveDate from "./pages/SaveDate";
+import Home from "./pages/Home"; // Nueva página
 import cancion from "./assets/audio/audio1.mp3";
 
 const App = () => {
@@ -21,10 +23,13 @@ const App = () => {
   }, []);
 
   return (
-    <>
+    <Router>
       <audio ref={audioRef} src={cancion} loop autoPlay />
-      <SaveDate></SaveDate>
-    </>
+      <Routes>
+        <Route path="/" element={<SaveDate />} />
+        <Route path="/confirmacion" element={<Home />} />
+      </Routes>
+    </Router>
   );
 };
 

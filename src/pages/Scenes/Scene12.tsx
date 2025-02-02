@@ -130,7 +130,7 @@ const Scene12: FC = () => {
                 CONFIRMAR ASISTENCIA CON MARIANA
               </button>
               <button
-                onClick={handleWhatsAppClick}
+                onClick={handleWhatsAppClick2}
                 className="btn btn-primary text-xs roboto-mono bg-orange-200 rounded-lg font-bold py-2 px-4 w-full mt-2"
               >
                 CONFIRMAR ASISTENCIA CON ENIER

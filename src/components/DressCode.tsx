@@ -28,12 +28,7 @@ const DressCode = () => {
         vestimenta:
       </p>
       <div className="flex justify-center gap-5 mt-5">
-        <div
-          className="w-12 h-16 rounded-full flex items-center justify-center border"
-          style={{ backgroundColor: primaryColor }}
-        >
-          <p className="text-white font-bold text-center"></p>
-        </div>
+       
         <div
           className="w-12 h-16 rounded-full flex items-center justify-center "
           style={{ backgroundColor: secondaryColor }}

@@ -120,10 +120,10 @@ const Scene10: FC = () => {
               <p className="crimson-text text-sm poppins-regular">
                 BBVA
               </p>
-              <p className="crimson-text text-sm poppins-regular">
+              {/* <p className="crimson-text text-sm poppins-regular">
                 Ahorros
-              </p>
-              <p className="crimson-text text-xl poppins-bold">4152313988803057
+              </p> */}
+              <p className="crimson-text text-xl poppins-bold">4152 3143 8076 2891
               </p>
               <p className="crimson-text text-sm poppins-regular">
                 Mariana Pineda
@@ -134,9 +134,9 @@ const Scene10: FC = () => {
               <p className="crimson-text text-sm poppins-regular">
                 NEQUI
               </p>
-              <p className="crimson-text text-sm poppins-regular">
+              {/* <p className="crimson-text text-sm poppins-regular">
                 Ahorros
-              </p>
+              </p> */}
               <p className="crimson-text text-xl poppins-bold">3104929287</p>
               <p className="crimson-text text-sm poppins-regular">Enier Montes</p>
             </div>

@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SaveDate from "./pages/SaveDate";
 import Home from "./pages/Home"; // Nueva página
 import cancion from "./assets/audio/audio1.mp3";
+import Participacion from "./pages/Participación";
 
 const App = () => {
   const audioRef = useRef<HTMLAudioElement>(null);
@@ -28,6 +29,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<SaveDate />} />
         <Route path="/confirmacion" element={<Home />} />
+        <Route path="/participacion" element={<Participacion />} />
+
       </Routes>
     </Router>
   );
